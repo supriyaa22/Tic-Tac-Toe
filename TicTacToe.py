@@ -51,7 +51,7 @@ def win_check(board, mark):
     # Win Tic Tac Toe?
     
     # All rows, and check to see if they all share the same marker?
-    return ((board[7] == mark and board[8] == mark and board[9] == mark) or #across the
+    return ((board[7] == mark and board[8] == mark and board[9] == mark) or #across the top
     (board[4] == mark and board[5] == mark and board[6] == mark) or # across the middle
     (board[1] == mark and board[2] == mark and board[3] == mark) or # across the bottom
     (board[7] == mark and board[4] == mark and board[1] == mark) or # down the middle
@@ -92,7 +92,7 @@ def full_board_check(board):
     # Board is full is we return true
     return True
 
-# a function that asks for a player's next position (as a number 1-9) and 
+# A function that asks for a player's next position (as a number 1-9) and 
 # then uses the function from step 6 to check if it's a free position. If it is, then return the position for later use.
 
 def player_choice(board):
@@ -104,7 +104,7 @@ def player_choice(board):
         
     return position
 
-# a function that asks the player if they want to play again and returns a boolean True 
+# A function that asks the player if they want to play again and returns a boolean True 
 # if they do want to play again.
 
 def replay():
